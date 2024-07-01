@@ -25,7 +25,7 @@
     "@prisma/client": "^5.16.1",
     "@turf/great-circle": "^7.0.0",
     "adm-zip": "^0.5.14",
-    "aws-sdk": "^2.1651.0",
+    "aws-sdk": "^2.1652.0",
     "chardet": "^2.0.0",
     "cron": "^3.1.7",
     "discord.js": "^14.15.3",
@@ -64,7 +64,7 @@
     "stylelint-config-recommended-scss": "^14.0.0",
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.1",
-    "typescript": "5.4.5",
+    "typescript": "5.5.3",
     "vite-plugin-eslint2": "^4.4.0",
     "vue-component-type-helpers": "^2.0.24",
     "vue-tsc": "^1.8.27"
