@@ -3918,9 +3918,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:^2.1651.0":
-  version: 2.1651.0
-  resolution: "aws-sdk@npm:2.1651.0"
+"aws-sdk@npm:^2.1652.0":
+  version: 2.1652.0
+  resolution: "aws-sdk@npm:2.1652.0"
   dependencies:
     buffer: "npm:4.9.2"
     events: "npm:1.1.1"
@@ -3932,7 +3932,7 @@ __metadata:
     util: "npm:^0.12.4"
     uuid: "npm:8.0.0"
     xml2js: "npm:0.6.2"
-  checksum: 10c0/cdaedc5e12c2f958d29cc5416b63553872ef01047eccbdce96df659f3f4403b9a2ca7cbcb931204a26727365e6719fec5b893961082703418288ab9e20ee7c42
+  checksum: 10c0/771387b9c40f4032b5063468d17be62753e40543da20575e72500a0222ea5c26ceec86bd66afe0f2e34a66e6a8e484f50783ef8defeb2efd7f4568f363591b2c
   languageName: node
   linkType: hard
 
@@ -8783,7 +8783,7 @@ __metadata:
     "@types/jsonwebtoken": "npm:^9.0.6"
     "@types/node": "npm:^20.14.9"
     adm-zip: "npm:^0.5.14"
-    aws-sdk: "npm:^2.1651.0"
+    aws-sdk: "npm:^2.1652.0"
     chardet: "npm:^2.0.0"
     cron: "npm:^3.1.7"
     discord.js: "npm:^14.15.3"
@@ -8807,7 +8807,7 @@ __metadata:
     stylelint-config-recommended-vue: "npm:^1.5.0"
     stylelint-config-standard: "npm:^36.0.1"
     svgo: "npm:^3.3.2"
-    typescript: "npm:5.4.5"
+    typescript: "npm:5.5.3"
     ua-parser-js: "npm:2.0.0-beta.3"
     vite-plugin-eslint2: "npm:^4.4.0"
     vite-svg-loader: "npm:^5.1.0"
@@ -11653,23 +11653,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.4.5":
-  version: 5.4.5
-  resolution: "typescript@npm:5.4.5"
+"typescript@npm:5.5.3":
+  version: 5.5.3
+  resolution: "typescript@npm:5.5.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/2954022ada340fd3d6a9e2b8e534f65d57c92d5f3989a263754a78aba549f7e6529acc1921913560a4b816c46dce7df4a4d29f9f11a3dc0d4213bb76d043251e
+  checksum: 10c0/f52c71ccbc7080b034b9d3b72051d563601a4815bf3e39ded188e6ce60813f75dbedf11ad15dd4d32a12996a9ed8c7155b46c93a9b9c9bad1049766fe614bbdd
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>":
-  version: 5.4.5
-  resolution: "typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"
+"typescript@patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>":
+  version: 5.5.3
+  resolution: "typescript@patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/db2ad2a16ca829f50427eeb1da155e7a45e598eec7b086d8b4e8ba44e5a235f758e606d681c66992230d3fc3b8995865e5fd0b22a2c95486d0b3200f83072ec9
+  checksum: 10c0/911c7811d61f57f07df79c4a35f56a0f426a65426a020e5fcd792f66559f399017205f5f10255329ab5a3d8c2d1f1d19530aeceffda70758a521fae1d469432e
   languageName: node
   linkType: hard
 
