@@ -126,6 +126,40 @@
                         />
                     </common-control-block>
                 </div>
+                <div
+                    class="filters_sections_section"
+                    :class="{ 'filters_sections_section--selected': selectedFilter === 'setting' }"
+                    @click="selectedFilter = 'setting'"
+                >
+                    <common-button type="secondary">
+                        <template #icon>
+                            <settings-icon/>
+                        </template>
+                    </common-button>
+                    <common-control-block
+                        center-by="start"
+                        class="filters_sections_section_content"
+                        location="right"
+                        :model-value="selectedFilter === 'setting'"
+                        @update:modelValue="!$event ? selectedFilter = null : undefined"
+                    >
+                        <template #title>
+                            Options
+                        </template>
+                        <div
+                            class="filters_toggle"
+                        >
+                            <common-toggle
+                                :model-value="store.localSettings.apt_popular_rings || false"
+                                @update:modelValue="setUserLocalSettings( { apt_popular_rings: $event } )"
+                            > Show airport rings
+                                <template #description>
+                                    Enabling this will show rings around airport with more than 8 movements in the next hour. The size is decided based on the expected movements in the next hour.
+                                </template>
+                            </common-toggle>
+                        </div>
+                    </common-control-block>
+                </div>
             </div>
         </transition>
     </div>
@@ -135,6 +169,7 @@
 import FilterIcon from '@/assets/icons/kit/filter.svg?component';
 import MapIcon from '@/assets/icons/kit/map.svg?component';
 import GroundIcon from '@/assets/icons/kit/mountains.svg?component';
+import SettingsIcon from '@/assets/icons/kit/settings.svg?component';
 import CommonButton from '~/components/common/basic/CommonButton.vue';
 import { useStore } from '~/store';
 import CommonControlBlock from '~/components/common/blocks/CommonControlBlock.vue';
