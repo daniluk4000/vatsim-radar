@@ -404,7 +404,14 @@ onMounted(async () => {
         immediate: true,
     });
 
-    watch(dataStore.vatsim.updateTimestamp, () => {
+    watch([dataStore.vatsim.updateTimestamp, store.localSettings.traffic?.vatglassesLevel], () => {
+        if (store.localSettings.traffic?.vatglassesLevel !== false) {
+            clearArrFeatures();
+            arrAtcLocal.value.clear();
+
+            return;
+        }
+
         if (!props.arrAtc?.length || isPrimaryAirport.value) {
             clearArrFeatures();
             arrAtcLocal.value.clear();
