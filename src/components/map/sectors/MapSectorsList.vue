@@ -11,11 +11,10 @@
     <template v-if="store.localSettings.traffic?.vatglassesLevel !== false">
         <template
             v-for="(countryEntries, countryId) in dataStore.vatglassesActivePositions.value"
-            :key="countryId"
         >
             <map-vatglasses-position
                 v-for="(position, PositionId) in countryEntries"
-                :key="countryId + '-' + PositionId"
+                :key="countryId + '-' + PositionId + position.airspaceKeys"
                 :position="position"
             />
         </template>

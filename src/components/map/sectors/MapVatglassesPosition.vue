@@ -1,3 +1,7 @@
+<template>
+    <slot/>
+</template>
+
 <script setup lang="ts">
 import type { PropType, ShallowRef } from 'vue';
 import { onMounted } from 'vue';
@@ -59,7 +63,9 @@ const init = () => {
 
 onMounted(init);
 
-watch([() => props.position.sectorsCombined], init); // TODO: this is not working, it is never triggered
+watch(() => props.position, () => {
+    init();
+}); // TODO: this is not working, it is never triggered
 
 onBeforeUnmount(() => {
     if (sectorFeatures) {
