@@ -404,7 +404,7 @@ onMounted(async () => {
         immediate: true,
     });
 
-    watch([dataStore.vatsim.updateTimestamp, store.localSettings.traffic?.vatglassesLevel], () => {
+    watch([dataStore.vatsim.updateTimestamp, () => store.localSettings.traffic?.vatglassesLevel], () => {
         if (store.localSettings.traffic?.vatglassesLevel !== false) {
             clearArrFeatures();
             arrAtcLocal.value.clear();
